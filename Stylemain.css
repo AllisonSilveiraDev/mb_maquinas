@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  height: 10vh;
+  width: 100vw;
+  background-color: #1a1a1a;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  margin: 0 50px 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 3rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+li {
+  margin-left: 35px;
+}
+
+.nav:hover {
+  text-decoration: underline;
+  color: #f15a24;
+}
+
+.btn-whats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  height: 40px;
+  width: 165px;
+  background-color: #f15a24;
+  border-radius: 10px;
+}
+
+.btn-whats img {
+  height: 20px;
+}
+
+.btn-whats:hover {
+  background-color: #ba4318;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.toggle {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #f15a24;
+  transition: color 0.5s;
+  margin: 1rem;
+  position: absolute;
+  right: 0.5rem;
+}
+
+.toggle:hover {
+  color: #ba4318;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+nav .icon-Iconefechar {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon-Iconefechar {
+  position: absolute;
+}
+
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+
+  place-content: center;
+}
+
+nav.show .icon-Iconefechar {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav.show .icon-Iconemenu {
+  visibility: hidden;
+  opacity: 1;
+}
+
+@media (min-width: 1000px) {
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav .icon-Iconemenu {
+    display: none;
+  }
+}
+
+@media (max-width: 999px) {
+  nav {
+    margin: 0 10px 0 10px;
+    width: 100vw;
+  }
+
+  ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    margin: 20px;
+  }
+}
