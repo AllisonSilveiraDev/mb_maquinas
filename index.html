@@ -15,16 +15,19 @@
     <link rel="stylesheet" href="Assets/fontmain/style.css" />
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav class="container">
         <img class="logo" src="Assets/imagens/logo-branco.png" alt="Logo Lua" />
         <div class="menu">
           <ul class="grid">
-            <li><a class="title nav" href="#">Home</a></li>
-            <li><a class="title nav" href="#">Produtos</a></li>
-            <li><a class="title nav" href="#">Empresa</a></li>
+            <li><a class="title nav" href="#home">Home</a></li>
+            <li><a class="title nav" href="#produtos">Produtos</a></li>
+            <li><a class="title nav" href="#sobre">Empresa</a></li>
             <li>
-              <a class="title btn-whats" href="#"
+              <a
+                class="title btn-whats"
+                href="https://developer.mozilla.org/en-US/"
+                target="_blank"
                 >Orçamento<img src="./Assets/imagens/whats.png"
               /></a>
             </li>
@@ -34,6 +37,61 @@
         <div class="toggle icon-Iconefechar"></div>
       </nav>
     </header>
+    <section id="home">
+      <div>
+        <img src="./Assets/imagens/banner.png" alt="banner" class="banner" />
+        <img
+          src="./Assets/imagens/logo-metalizado.png"
+          alt="logo-prata"
+          class="logo-prata"
+        />
+      </div>
+    </section>
+    <section id="produtos">
+      <h1>Nossos Produtos</h1>
+      <div class="maquinas">
+        <div class="maquina-1">
+          <img src="./Assets/imagens/maquina1.jpeg" alt="maquina 1" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem rem
+            quia nesciunt. Aliquam eius optio atque officiis. Quos quis, modi,
+            qui ducimus sit error quae soluta sed ut ex temporibus.
+          </p>
+        </div>
+        <div class="maquina-1">
+          <img src="./Assets/imagens/maquina2.jpeg" alt="maquina 1" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem rem
+            quia nesciunt. Aliquam eius optio atque officiis. Quos quis, modi,
+            qui ducimus sit error quae soluta sed ut ex temporibus.
+          </p>
+        </div>
+        <div class="maquina-1">
+          <img src="./Assets/imagens/maquina3.jpeg" alt="maquina 1" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem rem
+            quia nesciunt. Aliquam eius optio atque officiis. Quos quis, modi,
+            qui ducimus sit error quae soluta sed ut ex temporibus.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="sobre">
+      <div class="maquinas">
+        <div class="container-empresa">
+          <h1 class="sobre-title">Quem somos?</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi
+            asperiores reprehenderit rem, quaerat, delectus distinctio nobis
+            mollitia iste quisquam voluptates sint impedit saepe quasi,
+            temporibus exercitationem adipisci magni officia eaque.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-div"></div>
+    </footer>
 
     <script src="main.js"></script>
   </body>

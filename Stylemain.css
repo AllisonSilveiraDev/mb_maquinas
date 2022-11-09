@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: roboto, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 header {
@@ -101,6 +103,7 @@ nav .icon-Iconefechar {
 }
 
 nav.show .menu {
+  z-index: 2;
   opacity: 1;
   visibility: visible;
 
@@ -116,6 +119,8 @@ nav.show .menu {
 }
 
 nav.show .icon-Iconefechar {
+  position: fixed;
+  z-index: 3;
   opacity: 1;
   visibility: visible;
 }
@@ -155,4 +160,114 @@ nav.show .icon-Iconemenu {
   li {
     margin: 20px;
   }
+
+  .logo-prata {
+    max-height: 150px;
+
+    left: 20%;
+  }
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.logo-prata {
+  max-height: 150px;
+  position: absolute;
+  left: 50%;
+  margin-top: 75px;
+  z-index: 1;
+}
+
+@media (max-width: 400px) {
+  .logo-prata {
+    left: 18%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+  .logo-prata {
+    left: 30%;
+  }
+}
+
+#produtos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section h1 {
+  margin: 20px;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
+  color: #f15a24;
+}
+
+.maquinas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.maquina-1 {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.maquinas img {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1300px) {
+  .maquina-1 {
+    width: 300px;
+    margin: 20px;
+  }
+
+  .maquinas img {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+}
+
+.container-empresa {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 1750px) {
+  .container-empresa {
+    width: 50vw;
+  }
+}
+
+.sobre-title {
+  font-size: 25px;
+}
+
+footer {
+  height: 30vh;
+  width: 100vw;
+  background-color: #c1c1c1;
 }
