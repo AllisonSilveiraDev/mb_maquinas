@@ -237,6 +237,12 @@ section h1 {
 .maquinas img {
   width: 400px;
   margin-bottom: 20px;
+  transition: all 0.5s ease;
+  border-radius: 7px;
+}
+
+.maquinas img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1300px) {
