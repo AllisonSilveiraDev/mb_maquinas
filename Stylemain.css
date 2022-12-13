@@ -167,8 +167,6 @@ nav.show .icon-Iconemenu {
 
   .logo-prata {
     max-height: 150px;
-
-    left: 20%;
   }
 }
 
@@ -179,21 +177,21 @@ nav.show .icon-Iconemenu {
 }
 .banner {
   width: 100%;
-  height: 235px;
+  height: 160px;
   object-fit: cover;
 }
 
 .logo-prata {
-  max-height: 110px;
+  max-height: 100px;
   position: absolute;
   left: 50%;
-  margin-top: 65px;
+  margin-top: 30px;
   z-index: 1;
 }
 
 @media (max-width: 400px) {
   .logo-prata {
-    left: 25%;
+    left: 35%;
   }
 }
 
@@ -211,7 +209,7 @@ nav.show .icon-Iconemenu {
 }
 
 section h1 {
-  margin: 10px;
+  margin-top: 5px;
   font-family: Poppins, sans-serif;
   font-size: 30px;
   color: #f15a24;
